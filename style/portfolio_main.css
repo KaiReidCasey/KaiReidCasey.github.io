@@ -4,3 +4,7 @@
 	border-style: dashed;
 	border-width: 4em; 
 }
+
+.construction {
+	display:none !important;
+}
