@@ -1,4 +1,20 @@
 
+body {
+	/*Stolen from the headshot shadow
+	  with transparency reduced to 0.2*/
+	background-color: #eef6f5;
+	/*
+		IF YOU WANT TO CHANGE THE BACKGROUND COLOR
+		Remember to run all of the following through
+		a color checker for WCAG 2.1 again
+			....................................
+		h1/h2 color - #083a7c - contrast ratio: 10.04
+		used links - #551A8B - contrast ratio: 10.04
+		unused links - #0000EE - contrast ratio: 8.56
+		other plain text - #000000 - contrast ratio: 19.4
+	*/
+}
+
 section {
 	display: flex; /*keeps section blocks*/
 	flex-direction: row;
@@ -15,6 +31,37 @@ section:not(:first-of-type) {
   the parent is a section element*/
 section > div {
 	flex: 0 0;
+}
+
+h1, h2 {
+	/*Passes AAA for WCAG 2.1
+	  Contrast ratio 10.04
+	  with background color #eef6f5
+	  - https://userway.org/contrast/083a7c/ffffff*/
+	color: #083a7c;
+}
+
+h1.title-text {
+	margin-bottom: 10px;
+}
+
+h2.title-text {
+	margin-top: 10px;
+}
+
+#title-wrapper {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 20em;
+}
+
+.divider-horizontal {
+	margin-left: auto;
+	margin-right: auto;
+	height: 2px;
+	width: 10em;
+	background-color: #328bb3;
 }
 
 .img-test {
