@@ -83,6 +83,11 @@ h2.title-text {
 		box-shadow: 6px 8px rgba(172, 212, 209, 0.8);
 		max-width: 300px;
 	}
+	/*Prevent too narrow on small screens*/
+	.text-column {
+		max-width: 90%;
+		min-width: 85%;
+	}
 }
 
 .text-column {
