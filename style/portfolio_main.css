@@ -1,3 +1,4 @@
+/* -------------- ELEMENTS -------------- */
 
 body {
 	/*Stolen from the headshot shadow
@@ -49,12 +50,16 @@ h2.title-text {
 	margin-top: 10px;
 }
 
+/*  -------------- IDS -------------- */
+
 #title-wrapper {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	width: 20em;
 }
+
+/*  -------------- CLASSES -------------- */
 
 .divider-horizontal {
 	margin-left: auto;
@@ -75,6 +80,18 @@ h2.title-text {
 	max-width:20em;
 }
 
+.text-column {
+	margin-top: 50px;
+	max-width: 50%;
+	min-width: 50%;
+}
+
+.construction {
+	display:none !important;
+}
+
+/*  -------------- @MEDIAS -------------- */
+
 @media only screen and (max-width: 600px) {
 	/*Prevent headshot from pushing off the screen
 	  on small devices*/
@@ -88,14 +105,4 @@ h2.title-text {
 		max-width: 90%;
 		min-width: 85%;
 	}
-}
-
-.text-column {
-	margin-top: 50px;
-	max-width: 50%;
-	min-width: 50%;
-}
-
-.construction {
-	display:none !important;
 }
