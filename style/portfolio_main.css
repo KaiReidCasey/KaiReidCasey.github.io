@@ -1,8 +1,37 @@
 
+section {
+	display: flex; /*keeps section blocks*/
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: max-width;
+}
+
+section:not(:first-of-type) {
+	margin-top: 40px;
+}
+
+/*Selects all div elements where
+  the parent is a section element*/
+section > div {
+	flex: 0 0;
+}
+
 .img-test {
-	max-width:200em;
-	border-style: dashed;
-	border-width: 4em; 
+	margin-right: 40px; /*keeps text out of dramatic shadow*/
+	/*border is 3 stripes in 2 blues
+	  background is an offset square in a pale blue-green
+	  all 3 pulled from hair color*/
+	border: 3mm double #328bb3;
+	background-color: #083a7c;
+	box-shadow: 30px 40px rgba(172, 212, 209, 0.8);
+	max-width:20em;
+}
+
+.text-column {
+	margin-top: 50px;
+	max-width: 50%;
+	min-width: 50%;
 }
 
 .construction {
